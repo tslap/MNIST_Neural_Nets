@@ -106,7 +106,7 @@ class Network(object):
         
         
 def sgd(XX, YY, bs):
-    #sgd will take in training data XX and YY and run a sgd algorithim with batch size bs
+    #sgd will take in training data XX and YY and run a stochastic gradient descent algorithim with batch size bs
     
     for i in range(len(XX) // bs):
         X , Y = XX[ i*bs : i*bs + bs] , YY[ i*bs : i*bs + bs]
